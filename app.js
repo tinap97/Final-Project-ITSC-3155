@@ -229,7 +229,7 @@ function addToWishlist($id) {
 
     let email =$.trim($('#email').val()); //gets the user's email 
     $.ajax({
-        url: Url+'AddToCart',
+        url: Url+'AddToWishlist',
         type: 'post',
         dataType: 'json',
         data: {"product_id":$id, "email":email}, 
